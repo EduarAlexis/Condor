@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09EBAF576262B0E42A28C02E /* Pods_pruebaCondor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBADC8C9D5605461680E8E1 /* Pods_pruebaCondor.framework */; };
+		825CFEAF2DE08E820DD866B8 /* Pods_pruebaCondorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF29F0F812E12D11E6232C9E /* Pods_pruebaCondorTests.framework */; };
+		CFA76D97D9F155E8EBEAA129 /* Pods_pruebaCondor_pruebaCondorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3D5D38C89CC05B88908569 /* Pods_pruebaCondor_pruebaCondorUITests.framework */; };
+		F541107B2619F88F00D69892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541107A2619F88F00D69892 /* AppDelegate.swift */; };
+		F541107D2619F88F00D69892 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541107C2619F88F00D69892 /* SceneDelegate.swift */; };
+		F541107F2619F88F00D69892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541107E2619F88F00D69892 /* ViewController.swift */; };
+		F54110822619F88F00D69892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54110802619F88F00D69892 /* Main.storyboard */; };
+		F54110852619F88F00D69892 /* pruebaCondor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F54110832619F88F00D69892 /* pruebaCondor.xcdatamodeld */; };
+		F54110872619F89100D69892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54110862619F89100D69892 /* Assets.xcassets */; };
+		F541108A2619F89100D69892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54110882619F89100D69892 /* LaunchScreen.storyboard */; };
+		F54110952619F89100D69892 /* pruebaCondorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54110942619F89100D69892 /* pruebaCondorTests.swift */; };
+		F54110A02619F89100D69892 /* pruebaCondorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541109F2619F89100D69892 /* pruebaCondorUITests.swift */; };
+		F54110C8261A004D00D69892 /* GenerationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54110C7261A004D00D69892 /* GenerationsService.swift */; };
+		F54110CE261A009E00D69892 /* Generations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54110CD261A009E00D69892 /* Generations.swift */; };
+		F54110DC261A08A300D69892 /* Pokemon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54110DB261A08A300D69892 /* Pokemon.storyboard */; };
+		F54110E1261A090600D69892 /* GenerationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54110E0261A090600D69892 /* GenerationsViewController.swift */; };
+		F541110B261A16E100D69892 /* EnvironmentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541110A261A16E100D69892 /* EnvironmentHelper.swift */; };
+		F5411112261A174D00D69892 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411111261A174D00D69892 /* Helpers.swift */; };
+		F5411117261A180B00D69892 /* GenerationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411116261A180A00D69892 /* GenerationsViewModel.swift */; };
+		F541111D261A18D200D69892 /* GeneralUIControllerNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541111C261A18D200D69892 /* GeneralUIControllerNotifier.swift */; };
+		F5411133261A1B5D00D69892 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411132261A1B5D00D69892 /* UIExtensions.swift */; };
+		F5411138261A1C6100D69892 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411137261A1C6100D69892 /* AlertHelper.swift */; };
+		F5411140261A1D5A00D69892 /* GenerationsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541113F261A1D5A00D69892 /* GenerationsNavigator.swift */; };
+		F5411145261A1D8000D69892 /* BaseNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411144261A1D8000D69892 /* BaseNavigator.swift */; };
+		F5411155261A1ED400D69892 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411154261A1ED400D69892 /* BaseViewController.swift */; };
+		F541115D261A2DFF00D69892 /* Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541115C261A2DFF00D69892 /* Generation.swift */; };
+		F5411165261A2F4C00D69892 /* GenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411164261A2F4C00D69892 /* GenerationService.swift */; };
+		F5411176261A32EE00D69892 /* Generation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5411175261A32EE00D69892 /* Generation.storyboard */; };
+		F541117E261A335900D69892 /* GenerationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541117D261A335900D69892 /* GenerationViewController.swift */; };
+		F5411183261A336D00D69892 /* GenerationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411182261A336D00D69892 /* GenerationViewModel.swift */; };
+		F5411188261A337F00D69892 /* GenerationNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411187261A337F00D69892 /* GenerationNavigator.swift */; };
+		F54111AB261A556200D69892 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111AA261A556200D69892 /* PokemonViewController.swift */; };
+		F54111B0261A557400D69892 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111AF261A557400D69892 /* PokemonViewModel.swift */; };
+		F54111B5261A558500D69892 /* PokemonNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111B4261A558500D69892 /* PokemonNavigator.swift */; };
+		F54111BA261A589D00D69892 /* FirstPokemonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111B9261A589D00D69892 /* FirstPokemonDetails.swift */; };
+		F54111BF261A58AB00D69892 /* SecondPokemonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111BE261A58AB00D69892 /* SecondPokemonDetails.swift */; };
+		F54111C4261A596600D69892 /* PokemonDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111C3261A596600D69892 /* PokemonDetailsService.swift */; };
+		F54111C9261A60B000D69892 /* PokemonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111C8261A60B000D69892 /* PokemonDetails.swift */; };
+		F54111D7261A702E00D69892 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111D6261A702E00D69892 /* Util.swift */; };
+		F54111FA261A746700D69892 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54111F9261A746700D69892 /* GifImage.swift */; };
+		F5411217261A788800D69892 /* AssetsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5411216261A788800D69892 /* AssetsHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F54110912619F89100D69892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F541106F2619F88F00D69892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F54110762619F88F00D69892;
+			remoteInfo = pruebaCondor;
+		};
+		F541109C2619F89100D69892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F541106F2619F88F00D69892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F54110762619F88F00D69892;
+			remoteInfo = pruebaCondor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012F09041A38D12C095A53C6 /* Pods-pruebaCondorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaCondorTests.debug.xcconfig"; path = "Target Support Files/Pods-pruebaCondorTests/Pods-pruebaCondorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		05D2D990F1CC31B33CA175DA /* Pods-pruebaCondor-pruebaCondorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaCondor-pruebaCondorUITests.release.xcconfig"; path = "Target Support Files/Pods-pruebaCondor-pruebaCondorUITests/Pods-pruebaCondor-pruebaCondorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		25E948C5ACCEF77D19F2282B /* Pods-pruebaCondor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaCondor.release.xcconfig"; path = "Target Support Files/Pods-pruebaCondor/Pods-pruebaCondor.release.xcconfig"; sourceTree = "<group>"; };
+		3CBADC8C9D5605461680E8E1 /* Pods_pruebaCondor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaCondor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		995314128A66184FA773DB9B /* Pods-pruebaCondor-pruebaCondorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaCondor-pruebaCondorUITests.debug.xcconfig"; path = "Target Support Files/Pods-pruebaCondor-pruebaCondorUITests/Pods-pruebaCondor-pruebaCondorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBAD518435CD50BC41C6648 /* Pods-pruebaCondorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaCondorTests.release.xcconfig"; path = "Target Support Files/Pods-pruebaCondorTests/Pods-pruebaCondorTests.release.xcconfig"; sourceTree = "<group>"; };
+		C207C024B8B456FA3EF60706 /* Pods-pruebaCondor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaCondor.debug.xcconfig"; path = "Target Support Files/Pods-pruebaCondor/Pods-pruebaCondor.debug.xcconfig"; sourceTree = "<group>"; };
+		DD3D5D38C89CC05B88908569 /* Pods_pruebaCondor_pruebaCondorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaCondor_pruebaCondorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF29F0F812E12D11E6232C9E /* Pods_pruebaCondorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaCondorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54110772619F88F00D69892 /* pruebaCondor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaCondor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F541107A2619F88F00D69892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F541107C2619F88F00D69892 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F541107E2619F88F00D69892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F54110812619F88F00D69892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F54110842619F88F00D69892 /* pruebaCondor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pruebaCondor.xcdatamodel; sourceTree = "<group>"; };
+		F54110862619F89100D69892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F54110892619F89100D69892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F541108B2619F89100D69892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54110902619F89100D69892 /* pruebaCondorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaCondorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54110942619F89100D69892 /* pruebaCondorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaCondorTests.swift; sourceTree = "<group>"; };
+		F54110962619F89100D69892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F541109B2619F89100D69892 /* pruebaCondorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaCondorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F541109F2619F89100D69892 /* pruebaCondorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaCondorUITests.swift; sourceTree = "<group>"; };
+		F54110A12619F89100D69892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54110C7261A004D00D69892 /* GenerationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationsService.swift; sourceTree = "<group>"; };
+		F54110CD261A009E00D69892 /* Generations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generations.swift; sourceTree = "<group>"; };
+		F54110DB261A08A300D69892 /* Pokemon.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pokemon.storyboard; sourceTree = "<group>"; };
+		F54110E0261A090600D69892 /* GenerationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationsViewController.swift; sourceTree = "<group>"; };
+		F541110A261A16E100D69892 /* EnvironmentHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentHelper.swift; sourceTree = "<group>"; };
+		F5411111261A174D00D69892 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F5411116261A180A00D69892 /* GenerationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationsViewModel.swift; sourceTree = "<group>"; };
+		F541111C261A18D200D69892 /* GeneralUIControllerNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUIControllerNotifier.swift; sourceTree = "<group>"; };
+		F5411132261A1B5D00D69892 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		F5411137261A1C6100D69892 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		F541113F261A1D5A00D69892 /* GenerationsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationsNavigator.swift; sourceTree = "<group>"; };
+		F5411144261A1D8000D69892 /* BaseNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigator.swift; sourceTree = "<group>"; };
+		F5411154261A1ED400D69892 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F541115C261A2DFF00D69892 /* Generation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generation.swift; sourceTree = "<group>"; };
+		F5411164261A2F4C00D69892 /* GenerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationService.swift; sourceTree = "<group>"; };
+		F5411175261A32EE00D69892 /* Generation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Generation.storyboard; sourceTree = "<group>"; };
+		F541117D261A335900D69892 /* GenerationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationViewController.swift; sourceTree = "<group>"; };
+		F5411182261A336D00D69892 /* GenerationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationViewModel.swift; sourceTree = "<group>"; };
+		F5411187261A337F00D69892 /* GenerationNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationNavigator.swift; sourceTree = "<group>"; };
+		F54111AA261A556200D69892 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		F54111AF261A557400D69892 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		F54111B4261A558500D69892 /* PokemonNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonNavigator.swift; sourceTree = "<group>"; };
+		F54111B9261A589D00D69892 /* FirstPokemonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPokemonDetails.swift; sourceTree = "<group>"; };
+		F54111BE261A58AB00D69892 /* SecondPokemonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPokemonDetails.swift; sourceTree = "<group>"; };
+		F54111C3261A596600D69892 /* PokemonDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailsService.swift; sourceTree = "<group>"; };
+		F54111C8261A60B000D69892 /* PokemonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetails.swift; sourceTree = "<group>"; };
+		F54111D6261A702E00D69892 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F54111F9261A746700D69892 /* GifImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		F5411216261A788800D69892 /* AssetsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F54110742619F88F00D69892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EBAF576262B0E42A28C02E /* Pods_pruebaCondor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F541108D2619F89100D69892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825CFEAF2DE08E820DD866B8 /* Pods_pruebaCondorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54110982619F89100D69892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA76D97D9F155E8EBEAA129 /* Pods_pruebaCondor_pruebaCondorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51D8E2978FD67BD6A4C7C128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C207C024B8B456FA3EF60706 /* Pods-pruebaCondor.debug.xcconfig */,
+				25E948C5ACCEF77D19F2282B /* Pods-pruebaCondor.release.xcconfig */,
+				995314128A66184FA773DB9B /* Pods-pruebaCondor-pruebaCondorUITests.debug.xcconfig */,
+				05D2D990F1CC31B33CA175DA /* Pods-pruebaCondor-pruebaCondorUITests.release.xcconfig */,
+				012F09041A38D12C095A53C6 /* Pods-pruebaCondorTests.debug.xcconfig */,
+				AEBAD518435CD50BC41C6648 /* Pods-pruebaCondorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		66E47B58A71A6455DC8A272F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CBADC8C9D5605461680E8E1 /* Pods_pruebaCondor.framework */,
+				DD3D5D38C89CC05B88908569 /* Pods_pruebaCondor_pruebaCondorUITests.framework */,
+				EF29F0F812E12D11E6232C9E /* Pods_pruebaCondorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F541106E2619F88F00D69892 = {
+			isa = PBXGroup;
+			children = (
+				F54110792619F88F00D69892 /* pruebaCondor */,
+				F54110932619F89100D69892 /* pruebaCondorTests */,
+				F541109E2619F89100D69892 /* pruebaCondorUITests */,
+				F54110782619F88F00D69892 /* Products */,
+				51D8E2978FD67BD6A4C7C128 /* Pods */,
+				66E47B58A71A6455DC8A272F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F54110782619F88F00D69892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F54110772619F88F00D69892 /* pruebaCondor.app */,
+				F54110902619F89100D69892 /* pruebaCondorTests.xctest */,
+				F541109B2619F89100D69892 /* pruebaCondorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F54110792619F88F00D69892 /* pruebaCondor */ = {
+			isa = PBXGroup;
+			children = (
+				F54110C22619FFA300D69892 /* Business */,
+				F541110F261A172000D69892 /* Resources */,
+				F54110C32619FFAC00D69892 /* UI */,
+				F541107A2619F88F00D69892 /* AppDelegate.swift */,
+				F541107E2619F88F00D69892 /* ViewController.swift */,
+				F541107C2619F88F00D69892 /* SceneDelegate.swift */,
+				F54110862619F89100D69892 /* Assets.xcassets */,
+				F54110882619F89100D69892 /* LaunchScreen.storyboard */,
+				F541108B2619F89100D69892 /* Info.plist */,
+				F54110832619F88F00D69892 /* pruebaCondor.xcdatamodeld */,
+			);
+			path = pruebaCondor;
+			sourceTree = "<group>";
+		};
+		F54110932619F89100D69892 /* pruebaCondorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F54110942619F89100D69892 /* pruebaCondorTests.swift */,
+				F54110962619F89100D69892 /* Info.plist */,
+			);
+			path = pruebaCondorTests;
+			sourceTree = "<group>";
+		};
+		F541109E2619F89100D69892 /* pruebaCondorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F541109F2619F89100D69892 /* pruebaCondorUITests.swift */,
+				F54110A12619F89100D69892 /* Info.plist */,
+			);
+			path = pruebaCondorUITests;
+			sourceTree = "<group>";
+		};
+		F54110C22619FFA300D69892 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				F54110CC261A007100D69892 /* Models */,
+				F54110C42619FFB900D69892 /* Services */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		F54110C32619FFAC00D69892 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F541111B261A18B800D69892 /* Arch */,
+				F54110D5261A086D00D69892 /* Pokemons */,
+				F541116C261A324E00D69892 /* Generation */,
+				F54110C52619FFC600D69892 /* Genarations */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F54110C42619FFB900D69892 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F541110A261A16E100D69892 /* EnvironmentHelper.swift */,
+				F5411164261A2F4C00D69892 /* GenerationService.swift */,
+				F54110C7261A004D00D69892 /* GenerationsService.swift */,
+				F54111C3261A596600D69892 /* PokemonDetailsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F54110C52619FFC600D69892 /* Genarations */ = {
+			isa = PBXGroup;
+			children = (
+				F54110802619F88F00D69892 /* Main.storyboard */,
+				F54110E0261A090600D69892 /* GenerationsViewController.swift */,
+				F5411116261A180A00D69892 /* GenerationsViewModel.swift */,
+				F541113F261A1D5A00D69892 /* GenerationsNavigator.swift */,
+			);
+			path = Genarations;
+			sourceTree = "<group>";
+		};
+		F54110CC261A007100D69892 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F54110CD261A009E00D69892 /* Generations.swift */,
+				F541115C261A2DFF00D69892 /* Generation.swift */,
+				F54111B9261A589D00D69892 /* FirstPokemonDetails.swift */,
+				F54111BE261A58AB00D69892 /* SecondPokemonDetails.swift */,
+				F54111C8261A60B000D69892 /* PokemonDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F54110D5261A086D00D69892 /* Pokemons */ = {
+			isa = PBXGroup;
+			children = (
+				F54110DB261A08A300D69892 /* Pokemon.storyboard */,
+				F54111AA261A556200D69892 /* PokemonViewController.swift */,
+				F54111AF261A557400D69892 /* PokemonViewModel.swift */,
+				F54111B4261A558500D69892 /* PokemonNavigator.swift */,
+			);
+			path = Pokemons;
+			sourceTree = "<group>";
+		};
+		F541110F261A172000D69892 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F54111D5261A700E00D69892 /* Utils */,
+				F5411131261A1B3A00D69892 /* Extensions */,
+				F5411110261A174300D69892 /* Helpers */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5411110261A174300D69892 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5411137261A1C6100D69892 /* AlertHelper.swift */,
+				F5411111261A174D00D69892 /* Helpers.swift */,
+				F5411216261A788800D69892 /* AssetsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F541111B261A18B800D69892 /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				F5411154261A1ED400D69892 /* BaseViewController.swift */,
+				F5411144261A1D8000D69892 /* BaseNavigator.swift */,
+				F541111C261A18D200D69892 /* GeneralUIControllerNotifier.swift */,
+			);
+			path = Arch;
+			sourceTree = "<group>";
+		};
+		F5411131261A1B3A00D69892 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F54111F9261A746700D69892 /* GifImage.swift */,
+				F5411132261A1B5D00D69892 /* UIExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F541116C261A324E00D69892 /* Generation */ = {
+			isa = PBXGroup;
+			children = (
+				F5411175261A32EE00D69892 /* Generation.storyboard */,
+				F541117D261A335900D69892 /* GenerationViewController.swift */,
+				F5411182261A336D00D69892 /* GenerationViewModel.swift */,
+				F5411187261A337F00D69892 /* GenerationNavigator.swift */,
+			);
+			path = Generation;
+			sourceTree = "<group>";
+		};
+		F54111D5261A700E00D69892 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F54111D6261A702E00D69892 /* Util.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F54110762619F88F00D69892 /* pruebaCondor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54110A42619F89100D69892 /* Build configuration list for PBXNativeTarget "pruebaCondor" */;
+			buildPhases = (
+				94D34DF194443EE73400C5B7 /* [CP] Check Pods Manifest.lock */,
+				F54110732619F88F00D69892 /* Sources */,
+				F54110742619F88F00D69892 /* Frameworks */,
+				F54110752619F88F00D69892 /* Resources */,
+				A2612770549F8E54C2AAC648 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pruebaCondor;
+			productName = pruebaCondor;
+			productReference = F54110772619F88F00D69892 /* pruebaCondor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F541108F2619F89100D69892 /* pruebaCondorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54110A72619F89100D69892 /* Build configuration list for PBXNativeTarget "pruebaCondorTests" */;
+			buildPhases = (
+				1A4B48F8F135439D7ED7E0AD /* [CP] Check Pods Manifest.lock */,
+				F541108C2619F89100D69892 /* Sources */,
+				F541108D2619F89100D69892 /* Frameworks */,
+				F541108E2619F89100D69892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F54110922619F89100D69892 /* PBXTargetDependency */,
+			);
+			name = pruebaCondorTests;
+			productName = pruebaCondorTests;
+			productReference = F54110902619F89100D69892 /* pruebaCondorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F541109A2619F89100D69892 /* pruebaCondorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54110AA2619F89100D69892 /* Build configuration list for PBXNativeTarget "pruebaCondorUITests" */;
+			buildPhases = (
+				1EBEB4DF4E57D159DDE30C71 /* [CP] Check Pods Manifest.lock */,
+				F54110972619F89100D69892 /* Sources */,
+				F54110982619F89100D69892 /* Frameworks */,
+				F54110992619F89100D69892 /* Resources */,
+				6113A5E10FB3CFD48C0D38AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F541109D2619F89100D69892 /* PBXTargetDependency */,
+			);
+			name = pruebaCondorUITests;
+			productName = pruebaCondorUITests;
+			productReference = F541109B2619F89100D69892 /* pruebaCondorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F541106F2619F88F00D69892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F54110762619F88F00D69892 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F541108F2619F89100D69892 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F54110762619F88F00D69892;
+					};
+					F541109A2619F89100D69892 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F54110762619F88F00D69892;
+					};
+				};
+			};
+			buildConfigurationList = F54110722619F88F00D69892 /* Build configuration list for PBXProject "pruebaCondor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F541106E2619F88F00D69892;
+			productRefGroup = F54110782619F88F00D69892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F54110762619F88F00D69892 /* pruebaCondor */,
+				F541108F2619F89100D69892 /* pruebaCondorTests */,
+				F541109A2619F89100D69892 /* pruebaCondorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F54110752619F88F00D69892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54110DC261A08A300D69892 /* Pokemon.storyboard in Resources */,
+				F541108A2619F89100D69892 /* LaunchScreen.storyboard in Resources */,
+				F5411176261A32EE00D69892 /* Generation.storyboard in Resources */,
+				F54110872619F89100D69892 /* Assets.xcassets in Resources */,
+				F54110822619F88F00D69892 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F541108E2619F89100D69892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54110992619F89100D69892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A4B48F8F135439D7ED7E0AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pruebaCondorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EBEB4DF4E57D159DDE30C71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pruebaCondor-pruebaCondorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6113A5E10FB3CFD48C0D38AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pruebaCondor-pruebaCondorUITests/Pods-pruebaCondor-pruebaCondorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pruebaCondor-pruebaCondorUITests/Pods-pruebaCondor-pruebaCondorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pruebaCondor-pruebaCondorUITests/Pods-pruebaCondor-pruebaCondorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94D34DF194443EE73400C5B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pruebaCondor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2612770549F8E54C2AAC648 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pruebaCondor/Pods-pruebaCondor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pruebaCondor/Pods-pruebaCondor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pruebaCondor/Pods-pruebaCondor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F54110732619F88F00D69892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5411138261A1C6100D69892 /* AlertHelper.swift in Sources */,
+				F541107F2619F88F00D69892 /* ViewController.swift in Sources */,
+				F54111AB261A556200D69892 /* PokemonViewController.swift in Sources */,
+				F54110CE261A009E00D69892 /* Generations.swift in Sources */,
+				F5411217261A788800D69892 /* AssetsHelper.swift in Sources */,
+				F54111BA261A589D00D69892 /* FirstPokemonDetails.swift in Sources */,
+				F54110E1261A090600D69892 /* GenerationsViewController.swift in Sources */,
+				F54111D7261A702E00D69892 /* Util.swift in Sources */,
+				F54111C4261A596600D69892 /* PokemonDetailsService.swift in Sources */,
+				F5411133261A1B5D00D69892 /* UIExtensions.swift in Sources */,
+				F5411188261A337F00D69892 /* GenerationNavigator.swift in Sources */,
+				F5411140261A1D5A00D69892 /* GenerationsNavigator.swift in Sources */,
+				F54110852619F88F00D69892 /* pruebaCondor.xcdatamodeld in Sources */,
+				F541115D261A2DFF00D69892 /* Generation.swift in Sources */,
+				F5411112261A174D00D69892 /* Helpers.swift in Sources */,
+				F54111FA261A746700D69892 /* GifImage.swift in Sources */,
+				F541107B2619F88F00D69892 /* AppDelegate.swift in Sources */,
+				F54111C9261A60B000D69892 /* PokemonDetails.swift in Sources */,
+				F5411117261A180B00D69892 /* GenerationsViewModel.swift in Sources */,
+				F541107D2619F88F00D69892 /* SceneDelegate.swift in Sources */,
+				F541117E261A335900D69892 /* GenerationViewController.swift in Sources */,
+				F54111BF261A58AB00D69892 /* SecondPokemonDetails.swift in Sources */,
+				F54110C8261A004D00D69892 /* GenerationsService.swift in Sources */,
+				F5411165261A2F4C00D69892 /* GenerationService.swift in Sources */,
+				F54111B0261A557400D69892 /* PokemonViewModel.swift in Sources */,
+				F541110B261A16E100D69892 /* EnvironmentHelper.swift in Sources */,
+				F5411183261A336D00D69892 /* GenerationViewModel.swift in Sources */,
+				F5411155261A1ED400D69892 /* BaseViewController.swift in Sources */,
+				F54111B5261A558500D69892 /* PokemonNavigator.swift in Sources */,
+				F541111D261A18D200D69892 /* GeneralUIControllerNotifier.swift in Sources */,
+				F5411145261A1D8000D69892 /* BaseNavigator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F541108C2619F89100D69892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54110952619F89100D69892 /* pruebaCondorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54110972619F89100D69892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54110A02619F89100D69892 /* pruebaCondorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F54110922619F89100D69892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F54110762619F88F00D69892 /* pruebaCondor */;
+			targetProxy = F54110912619F89100D69892 /* PBXContainerItemProxy */;
+		};
+		F541109D2619F89100D69892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F54110762619F88F00D69892 /* pruebaCondor */;
+			targetProxy = F541109C2619F89100D69892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F54110802619F88F00D69892 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54110812619F88F00D69892 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F54110882619F89100D69892 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54110892619F89100D69892 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F54110A22619F89100D69892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F54110A32619F89100D69892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F54110A52619F89100D69892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C207C024B8B456FA3EF60706 /* Pods-pruebaCondor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7B886443U;
+				INFOPLIST_FILE = pruebaCondor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.pokeapi.pruebaCondor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F54110A62619F89100D69892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E948C5ACCEF77D19F2282B /* Pods-pruebaCondor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7B886443U;
+				INFOPLIST_FILE = pruebaCondor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.pokeapi.pruebaCondor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F54110A82619F89100D69892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012F09041A38D12C095A53C6 /* Pods-pruebaCondorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7B886443U;
+				INFOPLIST_FILE = pruebaCondorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.pokeapi.pruebaCondorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pruebaCondor.app/pruebaCondor";
+			};
+			name = Debug;
+		};
+		F54110A92619F89100D69892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBAD518435CD50BC41C6648 /* Pods-pruebaCondorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7B886443U;
+				INFOPLIST_FILE = pruebaCondorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.pokeapi.pruebaCondorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pruebaCondor.app/pruebaCondor";
+			};
+			name = Release;
+		};
+		F54110AB2619F89100D69892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 995314128A66184FA773DB9B /* Pods-pruebaCondor-pruebaCondorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7B886443U;
+				INFOPLIST_FILE = pruebaCondorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.pokeapi.pruebaCondorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pruebaCondor;
+			};
+			name = Debug;
+		};
+		F54110AC2619F89100D69892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D2D990F1CC31B33CA175DA /* Pods-pruebaCondor-pruebaCondorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7B886443U;
+				INFOPLIST_FILE = pruebaCondorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.pokeapi.pruebaCondorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pruebaCondor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F54110722619F88F00D69892 /* Build configuration list for PBXProject "pruebaCondor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54110A22619F89100D69892 /* Debug */,
+				F54110A32619F89100D69892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54110A42619F89100D69892 /* Build configuration list for PBXNativeTarget "pruebaCondor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54110A52619F89100D69892 /* Debug */,
+				F54110A62619F89100D69892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54110A72619F89100D69892 /* Build configuration list for PBXNativeTarget "pruebaCondorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54110A82619F89100D69892 /* Debug */,
+				F54110A92619F89100D69892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54110AA2619F89100D69892 /* Build configuration list for PBXNativeTarget "pruebaCondorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54110AB2619F89100D69892 /* Debug */,
+				F54110AC2619F89100D69892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F54110832619F88F00D69892 /* pruebaCondor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F54110842619F88F00D69892 /* pruebaCondor.xcdatamodel */,
+			);
+			currentVersion = F54110842619F88F00D69892 /* pruebaCondor.xcdatamodel */;
+			path = pruebaCondor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F541106F2619F88F00D69892 /* Project object */;
+}

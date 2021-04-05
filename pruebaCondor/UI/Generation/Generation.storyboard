@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PY0-Vh-5Pi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Generation View Controller-->
+        <scene sceneID="FP1-v3-2kL">
+            <objects>
+                <viewController storyboardIdentifier="GenerationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B45-fG-PiA" customClass="GenerationViewController" customModule="pruebaCondor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SIM-35-TRg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VKA-lo-gbc">
+                                <rect key="frame" x="20.5" y="132" width="373" height="720"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pokemons_cell" id="aFw-fm-sGm">
+                                        <rect key="frame" x="0.0" y="28" width="373" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aFw-fm-sGm" id="v2b-Td-zL1">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="B45-fG-PiA" id="ew0-pq-usM"/>
+                                    <outlet property="delegate" destination="B45-fG-PiA" id="WbH-PY-NvA"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemons generation " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmh-W3-FNS">
+                                <rect key="frame" x="20" y="98" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MFA-fd-tTU"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hmh-W3-FNS" firstAttribute="leading" secondItem="MFA-fd-tTU" secondAttribute="leading" constant="20" id="3Sy-I9-nIv"/>
+                            <constraint firstItem="MFA-fd-tTU" firstAttribute="trailing" secondItem="Hmh-W3-FNS" secondAttribute="trailing" constant="20" id="Fyk-q7-wDz"/>
+                            <constraint firstItem="MFA-fd-tTU" firstAttribute="bottom" secondItem="VKA-lo-gbc" secondAttribute="bottom" constant="10" id="QOq-v4-J6b"/>
+                            <constraint firstItem="Hmh-W3-FNS" firstAttribute="top" secondItem="MFA-fd-tTU" secondAttribute="top" constant="10" id="cpU-ch-VGo"/>
+                            <constraint firstItem="VKA-lo-gbc" firstAttribute="top" secondItem="Hmh-W3-FNS" secondAttribute="bottom" constant="10" id="sVY-hl-Xit"/>
+                            <constraint firstItem="VKA-lo-gbc" firstAttribute="centerX" secondItem="SIM-35-TRg" secondAttribute="centerX" id="tpz-4t-M6g"/>
+                            <constraint firstItem="VKA-lo-gbc" firstAttribute="width" secondItem="SIM-35-TRg" secondAttribute="width" multiplier="0.9" id="vxB-Ki-Kld"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p8j-BC-PH0"/>
+                    <connections>
+                        <outlet property="tableViewPokemons" destination="VKA-lo-gbc" id="onN-mb-BKH"/>
+                        <outlet property="titleLabel" destination="Hmh-W3-FNS" id="E3g-C5-CNr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmn-tL-O3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214.4927536231885" y="156.69642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RcH-9R-ync">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PY0-Vh-5Pi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghQ-Y8-zfd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B45-fG-PiA" kind="relationship" relationship="rootViewController" id="bJs-hi-M9l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUf-tK-VMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305.79710144927537" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
