@@ -1,9 +1,8 @@
 //
 //  BaseViewController.swift
-//  Moviva
+//  pruebaCondor
 //
-//  Created by XPI on 6/26/20.
-//  Copyright © 2020 Grupo Movalto. All rights reserved.
+//  Created by Eduar Peña Velasco on 4/04/21.
 //
 
 import Foundation
